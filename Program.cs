@@ -49,6 +49,8 @@ Console.Write($"max number: {max} ");
 
 //Задача 6. Напишите программу, которая на вход принимает число и выдает, является ли число четным (делится ли оно на два без остатка)
 
+/*
+
 Console.Write("Imput testing number ");
 int number = Convert.ToInt32(Console.ReadLine());
 
@@ -61,5 +63,39 @@ else
 {
     Console.Write("No ");
 }
+
+*/
+
+//Задача 8. Напишите программу, которая на вход принимает число (N), а на выходе показывает все четные числа от 1 до N
+
+Console.Write("Input number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+int min = 0;
+int max = number;
+int c = min + 1;
+
+while(min <= max)
+{
+    c = (min + 1) % 2;
+    min ++;
+        if(c == 0)
+        { 
+            Console.WriteLine($"{min} ");
+        }
+}
+
+
+
+
+
+
+
+
+
+
+  
+
+
 
 
